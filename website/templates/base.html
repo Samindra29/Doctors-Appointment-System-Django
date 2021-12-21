@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'website/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'website/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'website/css/styles.css' %}" />
+</head>
+
+<body>
+
+  <div class="header" style="
+  background: rgb(133, 183, 206) url('static/website/img/docs.png') no-repeat fixed right 100%" >
+  
+    
+    <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+        <div class="container"><a class="navbar-brand" href="#">MediCare United Hospital</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" href="#team">Our Team</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" href="#services">Services</a>
+                    </li>
+  
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" href="{% url 'contact_us'%}">Contact Us</a>
+                    </li>
+                    {% if request.user.is_authenticated %}
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" href="{% url 'manage_app' %}">Manage</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a href="{% url 'manage_app' %}" style="float: left;cursor:pointer;" aria-expanded="true" title="You Have 6 New Appointments">
+                      <i class="far fa-bell" style="font-size: 20px; float: left; color: rgb(172, 154, 192)">
+                      </i>
+                  </a>
+                  <span class="badge badge-danger">{{count}}</span>
+                </li>
+                {% endif %}
+                  
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <div class="container hero">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+                <h1>Proving the best care that you deserve</h1>
+                <p>
+                    We combine world class medicine
+                    with compassionate care. </p>
+                    <!-- btn btn-light btn-lg action-button -->
+                    <a href="{% url 'appointment' %}" class="btn btn-outline-secondary btn-lg btn5"  style="background-color: cornflowerblue;"  type="button">Book an appointment</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% block content %}
+
+{% endblock %}
+
+<section id="contact" class="card m-4 p-4">
+    <div class="container">
+        <div class="row text-center">
+          
+            <div class="col-sm-6">
+            <div class="contact-detail-box">
+              <i class="far fa-envelope text-colored fa-3x"></i>
+              <h4>Get In Touch</h4>
+              <abbr title="Phone">Phone:</abbr> +02 5672789<br>
+              Email: <a href="mailto:email@email.com" class="text-muted">UnitedHospital_dhk@gmail.com</a>
+            </div>
+          </div><!-- end col -->
+  
+          <div class="col-sm-6">
+            <div class="contact-detail-box">
+              <i class="fa fa-map-marker fa-3x text-colored"></i>
+              <h4>Our Location</h4>
+  
+              <address>
+                Plot # 15 Rd No 71<br>
+                Dhaka 1212, Bangladesh<br>
+            </address>
+            </div>
+          </div><!-- end col -->
+
+        </div>
+        
+</section>
+
+
+
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+
+<!--  JQuery  -->
+<script type="text/javascript" src="{ % static 'website/js/jquery-3.4.1.min.js'% }"></script>
+<!--  Bootstrap tooltips  -->
+<script type="text/javascript" src="{ % static 'website/js/popper.min.js'% }"></script>
+<!--  Bootstrap core JavaScript  -->
+<script type="text/javascript" src="{ % static 'website/js/bootstrap.min.js'% }"></script>
+
+
+
+  
+ 
+</body>
+
+</html>

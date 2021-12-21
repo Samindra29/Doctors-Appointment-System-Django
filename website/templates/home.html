@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="container py-5"  style="margin-block:200px;" id="team">
+    <div class="row text-center ">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="display-4">Our Team</h1>
+            <p class="lead">Our team is established and competant.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'website/img/team1.jpeg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Dr Sameer</h5>
+                    <span class="small text-uppercase text-muted">#1 Neurologist in Bangladesh</span>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'website/img/team2.jpeg' %}" alt="" class=" mh-100 rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Dr Shaeen Hussain </h5>
+                    <span class="small text-uppercase text-muted">Consultant cardiothoracic</span>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'website/img/team3.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Dr Sarra</h5>
+                    <span class="small text-uppercase text-muted">Consultant dermatologist</span>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'website//img/team4.png' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">DR Russel Khan</h5>
+                    <span class="small text-uppercase text-muted">Consultant Obstetrician</span>
+                </div>
+            </div><!-- End -->
+        </div>
+    </div>
+</section><!-- End -->
+
+
+
+<section id="services">
+  <div class="bg-primary text-center py-5 mb-4">
+      <div class="container">
+        <h1 class="fw-light text-white">Services</h1>
+        <p class="overview">We Provide the Best care that you need.</p>
+      </div>
+    </div>
+  <div class="container">
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'website/img/service1.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Primary Care</h5>
+            <div class="card-text text-black-50">Your personalized medical professionals.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'website/img/service2.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Dermatology</h5>
+            <div class="card-text text-black-50">Your skin care made easy.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'website/img/service3.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Team Member</h5>
+            <div class="card-text text-black-50">Web Developer</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 4 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'website/img/service4.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">PrEP Therapy</h5>
+            <div class="card-text text-black-50">Stay safe if you are at high exposure of HIV.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  
+  </div>
+</section>
+
+<br><br><br>
+
+</section>
+
+{% endblock %}
