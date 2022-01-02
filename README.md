@@ -12,8 +12,9 @@
 2. can fix appointment date
 3. automatically send email to the patient's email after appointment is set by admin
 
-### gmail of the hospital: medicareunited2021@gmail.com
-### password : medicare2021
+### gmail of the hospital:
+- address: medicareunited2021@gmail.com
+- password : medicare2021
 
 ### admin pannel:
 - username: admin
