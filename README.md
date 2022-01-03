@@ -1,8 +1,8 @@
 # Doctors Appointment System
 ## A basic doctor's appointment making system for easier management for both patient and the doctors. 
 
-### * Using Django framework * 
-### * Languages used : python, html, css, bootstrap template *
+* Using Django framework * 
+* Languages used : python, html, css, bootstrap template *
 
 ### Features :
 1. patient can book an appointment 
