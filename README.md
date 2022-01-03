@@ -1,6 +1,9 @@
 # Doctors Appointment System
 ## A basic doctor's appointment making system for easier management for both patient and the doctors. 
 
+### * Using Django framework * 
+### * Languages used : python, html, css, bootstrap template *
+
 ### Features :
 1. patient can book an appointment 
 2. patient can send requests without making an appointment. The request will be automatically sent to the provided mail address.
@@ -15,6 +18,6 @@
 - address: medicareunited2021@gmail.com
 - password : medicare2021
 
-### admin pannel:
+### Django admin pannel:
 - username: admin
 - password: admin
