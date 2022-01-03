@@ -1,16 +1,15 @@
 # Doctors Appointment System
+## A basic doctor's appointment making system for easier management for both patient and the doctors. 
 
 ### Features :
-
-### user: 
-1. can book an appointment 
-2. can send requests in the 'contact us' page
+1. patient can book an appointment 
+2. patient can send requests without making an appointment. The request will be automatically sent to the provided mail address.
 3. view location of the Hospital on maps
+5. The doctor's manager can view number of pending appointments on navigation bar
+6. The doctor's manager can fix appointment date
+7. automatically send email to the patient's email after appointment is set by admin
 
-### admin :
-1. can view number of pending appointments on navigation bar
-2. can fix appointment date
-3. automatically send email to the patient's email after appointment is set by admin
+## Login credentials
 
 ### gmail of the hospital:
 - address: medicareunited2021@gmail.com
