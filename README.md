@@ -10,7 +10,8 @@
 3. view location of the Hospital on maps
 5. The doctor's manager can view number of pending appointments on navigation bar
 6. The doctor's manager can fix appointment date
-7. automatically send email to the patient's email after appointment is set by admin
+7. can view the date when the appointment was made
+8. automatically send email to the patient's email after appointment is set by admin
 
 ## Login credentials
 
