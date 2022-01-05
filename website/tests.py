@@ -5,11 +5,11 @@ from .models import Appointment
 # Create your tests here.
 
 data = dict(
-    fname= 'john',
-    lname = 'sky' ,
-    email = 'sky@ghgh',
+    fname= 'test',
+    lname = 'user' ,
+    email = 'testUser@mail',
     mob = 232,
-    ans = 'ygdsgydg'  # message request
+    ans = 'need assistance'  # message request
 )
 
 def post(data):
